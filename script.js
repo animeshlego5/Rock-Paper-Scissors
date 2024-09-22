@@ -82,8 +82,10 @@ let computerScore = 0;
 
     if (humanScore > computerScore) {
         alert("You Won!");
-    } else {
+    } if else (humanScore < computerScore){
         alert("You Lost!");
+    } else{
+        alert("Draw!")
     }
 
 
