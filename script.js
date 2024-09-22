@@ -22,7 +22,7 @@ function getHumanChoice(input) {
 
 
 
-
+function playGame(){
 
 let humanScore = 0;
 let computerScore = 0;
@@ -70,22 +70,26 @@ let computerScore = 0;
             }
         }
     }
+    playRound(getHumanChoice(), getComputerChoice());
+    playRound(getHumanChoice(), getComputerChoice());
+    playRound(getHumanChoice(), getComputerChoice());
+    playRound(getHumanChoice(), getComputerChoice());
+    playRound(getHumanChoice(), getComputerChoice());
+    if (humanScore > computerScore) {
+        alert("You Won!");
+    } else if(humanScore < computerScore){
+        alert("You Lost!");
+    } else {
+        alert("Draw!");
+    }
+
+}
+playGame();
 //     const humanSelection = getHumanChoice();
 // const computerSelection = getComputerChoice();
 
 
-    playRound(getHumanChoice(), getComputerChoice());
-    playRound(getHumanChoice(), getComputerChoice());
-    playRound(getHumanChoice(), getComputerChoice());
-    playRound(getHumanChoice(), getComputerChoice());
-    playRound(getHumanChoice(), getComputerChoice());
+    
 
-    if (humanScore > computerScore) {
-        alert("You Won!");
-    } if else (humanScore < computerScore){
-        alert("You Lost!");
-    } else{
-        alert("Draw!")
-    }
-
+    
 
