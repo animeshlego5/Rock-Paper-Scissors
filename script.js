@@ -28,34 +28,38 @@ function playRound(humanChoice, computerChoice){
         }
         if(computerChoice=="paper"){
             console.log("You lost! Paper beats Rock!");
+            computerScore++;
         }
         if(computerChoice=="scissors"){
             console.log("You Win! Rock beats Scissors!");
+            humanScore++;
         }
     }
     if(humanChoice=="paper"){
         if(computerChoice=="rock"){
             console.log("You Win! Paper beats Rock!");
+            humanScore++;
         }
         if(computerChoice=="paper"){
             console.log("Draw! Both chose Paper!");
         }
         if(computerChoice=="scissors"){
             console.log("You lost! Scissors beats Paper!");
+            computerScore++;
         }
     }
     if(humanChoice=="scissors"){
         if(computerChoice=="rock"){
             console.log("You Lost! Rock beats Scissors!");
+            computerScore++;
         }
         if(computerChoice=="paper"){
             console.log("You Win! Scissors beats Paper!");
+            humanScore++;
         }
         if(computerChoice=="scissors"){
             console.log("Draw! Both chose Scissors!");
         }
     }
-
-
 }
 
